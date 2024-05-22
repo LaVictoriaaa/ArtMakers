@@ -183,7 +183,8 @@
 
 @media screen and (max-width: 768px) {
     .main {
-        background-size: cover;
+        /*background-size: cover;*/
+        background-size: contain;
     }
 
     .main-info {
@@ -286,7 +287,7 @@
 
     .main {
         background-size: contain;
-        height: 100vh;
+        /*height: 100vh;*/
     }
 
     .logo {
@@ -411,7 +412,8 @@
     }
     .main {
         background-image: url("../images/main-bg-mobile.png");
-        background-size: cover;
+        /*background-size: cover;*/
+        background-size: contain;
     }
     .logo {
         width: 50px;
