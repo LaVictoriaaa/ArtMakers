@@ -7,8 +7,6 @@
         grid-auto-flow: row;
         justify-content: center;
         margin: 0;
-
-
     }
 
     .gallery-items {
@@ -36,10 +34,15 @@
         max-width: 800px;
     }
 
+    .logo {
+        width: 60px;
+        height: 60px;
+    }
+
     .menu-list {
         gap: 30px;
     }
-    
+
     .menu-item a {
         font-size: 12px;
     }
@@ -54,12 +57,17 @@
     }
 
     .main-content {
-        height: 580px;
+        /*height: 580px;*/
+    }
+
+    .main-info {
+        padding-top: 90px;
+        gap: 25px;
     }
 
     .main-title {
-        max-width: 600px;
-        font-size: 60px;
+        /*max-width: 600px;*/
+        font-size: 50px;
     }
 
     .main-text {
@@ -88,18 +96,22 @@
         align-items: center;
     }
 
-    .map-location {
-        width: 800px;
-    }
-
     .footer-registration {
-        font-size: 16px;
+        font-size: 12px;
     }
 }
 
 @media screen and (max-width: 1023px) {
     .container {
         max-width: 600px;
+    }
+
+    .main {
+        background-color: #39373A;
+        background-image: url("../images/main-bg-1024.png");
+        background-size: contain;
+        /*background-repeat: no-repeat;*/
+        /*background-position: center center;*/
     }
 
     .menu {
@@ -170,12 +182,24 @@
 }
 
 @media screen and (max-width: 768px) {
+    .main {
+        background-size: cover;
+    }
+
+    .main-info {
+        padding-top: 30px;
+    }
+
     .main-title {
-        font-size: 50px;
+        font-size: 40px;
     }
 
     .main-text {
         font-size: 15px;
+    }
+
+    .main-action {
+        padding-top: 30px;
     }
 
     .common-title {
@@ -249,11 +273,20 @@
         gap: 30px;
         font-size: 20px;
     }
+
+    .footer-registration {
+        font-size: 10px;
+    }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 640px) {
     .container {
         max-width: 400px;
+    }
+
+    .main {
+        background-size: contain;
+        height: 100vh;
     }
 
     .logo {
@@ -261,17 +294,30 @@
         height: 80px;
     }
 
+    .main-info {
+        padding-top: 10px;
+    }
+
     .main-title {
-        font-size: 35px;
+        font-size: 25px;
+    }
+
+    .main-text {
+        font-size: 11px;
     }
 
     .common-title {
-        font-size: 30px;
+        font-size: 25px;
+    }
+
+    .about {
+        padding: 60px 0;
     }
 
     .about-text {
         font-size: 12px;
     }
+
 
     .about-pictures {
         padding: 10px 0;
@@ -337,7 +383,7 @@
     }
 
     .contacts {
-        padding: 20px;
+        padding: 50px;
     }
 
     .contacts-text {
@@ -360,7 +406,73 @@
 }
 
 @media screen and (max-width: 425px) {
-    .contacts-text  {
+    .container {
+        max-width: 300px;
+    }
+    .main {
+        background-image: url("../images/main-bg-mobile.png");
+        background-size: cover;
+    }
+    .logo {
+        width: 50px;
+        height: 50px;
+    }
+    .burger {
+        width: 30px;
+    }
+    .common-title {
+        font-size: 20px;
+    }
+    .main-info {
+        padding-top: 100px;
+    }
+
+    .main-action {
+        padding-top: 0;
+    }
+    .main-action .button {
+        width: 220px;
+        font-size: 12px;
+    }
+
+    .about-text {
+        padding: 20px;
+    }
+
+    .about-pictures img {
+        width: 50px;
+        height: 50px;
+    }
+    .about-action .button {
+        width: 260px;
+    }
+
+    .services {
+        padding: 50px 0;
+    }
+
+    .order-form-text {
+        font-size: 16px;
+    }
+    .order-form-block {
         width: 300px;
+    }
+    .input {
+        width: 260px;
+    }
+    .contacts-text {
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 375px)  {
+    .container {
+        max-width: 250px;
+    }
+    .service-item {
+        width: 240px;
+    }
+    .advantage-item {
+        width: 240px;
     }
 }

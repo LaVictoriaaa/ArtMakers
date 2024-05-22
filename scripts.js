@@ -1,4 +1,13 @@
 // window.onload = function () {
+
+document.getElementById('burger').onclick = function () {
+    document.getElementById('burger-menu').classList.remove('d-none');
+}
+
+document.getElementById('close').onclick = function () {
+    document.getElementById('burger-menu').classList.add('d-none');
+}
+
 //Gallery script
 const galleryBtn = document.getElementById('gallery-button');
 const gallery = Array.from(document.querySelectorAll('.gallery-item'));
@@ -24,6 +33,19 @@ function response() {
     }
 }
 response();
+
+function response2() {
+    if (window.innerWidth < 1500) {
+        gallery.forEach((item, index) => {
+            item.classList.add('d-none')
+            if (index <= 17) {
+                item.classList.remove('d-none')
+            }
+            openGallery();
+        })
+    }
+}
+response2();
 
 
 //Validation of order form
