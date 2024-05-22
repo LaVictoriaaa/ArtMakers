@@ -99,16 +99,22 @@ a {
 }
 
 .main {
-    position: relative;
+    width: 100%;
+    height: 900px;
     padding-bottom: 100px;
+    background-image: url("../images/main-bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
 }
 
+
 .main-image {
-    position: absolute;
-    top: 0;
-    z-index: -1;
-    left: 0;
-    width: 100%;
+    /*position: absolute;*/
+    /*top: 0;*/
+    /*z-index: -1;*/
+    /*left: 0;*/
+    /*width: 100%;*/
 }
 
 .header {
@@ -151,7 +157,9 @@ a {
 .button {
     cursor: pointer;
     width: 222px;
-    height: 54px;
+    padding: 15px 10px;
+    line-height: 1;
+    /*height: 54px;*/
     border: none;
     text-align: center;
     border-radius: 40px;
@@ -241,6 +249,7 @@ a {
 }
 
 .about {
+    position: relative;
     padding: 80px 0;
     display: flex;
     flex-direction: row;
@@ -306,7 +315,7 @@ a {
 .services-items {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
     gap: 10px;
     padding-top: 50px;
     margin-left: -140px;
@@ -314,6 +323,7 @@ a {
 }
 
 .service-item {
+    position: relative;
     width: 360px;
     padding: 50px 40px;
     border-radius: 10px;
@@ -336,6 +346,23 @@ a {
     font-size: 16px;
     padding-top: 20px;
 }
+
+.service-price {
+    position: absolute;
+    bottom: 40px;
+    right: 40px;
+    cursor: pointer;
+}
+
+.pricelist {
+    fill: #39373A;
+}
+.pricelist:hover {
+    width: 30px;
+    height: 30px;
+    fill: #FFCC29;
+}
+
 
 .consultation {
     background-image: url("../images/consultation-bg.png");
@@ -398,12 +425,13 @@ a {
 }
 
 .gallery-items {
+    line-height: 1;
     padding: 80px 0;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    margin-left: -150px;
-    margin-right: -150px;
-    gap: 30px;
+    margin-left: -120px;
+    margin-right: -120px;
+    gap: 15px;
 }
 
 .gallery-item {
@@ -461,9 +489,9 @@ a {
 
 .advantages-items {
     padding-top: 50px;
-    margin: 0 -141px;
+    margin: 0 -120px;
     display: flex;
-    gap: 17px
+    gap: 10px
 }
 
 .advantage-item {
@@ -472,7 +500,7 @@ a {
     flex-shrink: 0;
     border-radius: 10px;
     background: #FFF;
-    box-shadow: 0px 4px 25px 0px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 0px 40px 5px rgba(0, 0, 0, 0.05);
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -492,6 +520,7 @@ a {
     /*font-family: 'Comfortaa-Regular', sans-serif;*/
     font-family: 'Steppe-Book', sans-serif;
     font-size: 16px;
+    text-align: justify;
 }
 
 .order {
@@ -628,7 +657,7 @@ a {
 }
 
 .map {
-    background: #0000000C;
+    /*background: #0000000C;*/
     /*background: #F9F9F9;*/
     display: flex;
     justify-content: center;
