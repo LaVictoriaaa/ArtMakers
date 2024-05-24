@@ -680,7 +680,7 @@
                            placeholder="Введите ваше имя">
                     <span class="error" id="error-name">Заполните поле имя</span>
 
-                    <input name="userPhone" id="phone" class="input order-form-input" type="text" minlength="12"
+                    <input name="userPhone" id="phone" class="input order-form-input" type="tel" minlength="9"
                            maxlength="13" placeholder="Введите ваш телефон">
                     <span class="error" id="error-phone">Заполните поле телефон, без пробелов и тире. Поле должно содержать код оператора и иметь длину не менее 11 цифр</span>
 
@@ -910,7 +910,23 @@
     </div>
 </footer>
 
-<script src="scripts.js"></script>
+<div id="legacy-cookie-wrap" class="legacy-cookie">
+<div>
+    <div class="legacy-cookie-text">Сайт использует файлы cookie. Просматривая этот сайт, вы соглашаетесь с
+        нашими условиями использования файлов cookie и <a href="images/Personal-data-policy.pdf" target="_blank">политикой
+            конфиденциальности</a>.
+    </div>
+        <a class="legacy-cookie-close" id="legacy-cookie-close">
+            <svg width="18" height="18" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
+                <path d="M7.40958 8.9996L0.330301 1.92068C-0.109144 1.48123 -0.109144 0.768631 0.330301 0.329187C0.769745 -0.110258 1.48235 -0.110258 1.92179 0.329187L9.00037 7.40881L16.0793 0.329538C16.5187 -0.109906 17.2313 -0.109906 17.6708 0.329538C18.1102 0.768983 18.1102 1.48159 17.6708 1.92103L10.5912 8.9996L17.6704 16.0785C18.1099 16.518 18.1099 17.2306 17.6704 17.67C17.231 18.1095 16.5184 18.1095 16.0789 17.67L9.00037 10.5904L1.92144 17.67C1.482 18.1095 0.769393 18.1095 0.329949 17.67C-0.109496 17.2306 -0.109496 16.518 0.329949 16.0785L7.40958 8.9996Z"/>
+            </svg>
+        </a>
+    </div>
+</div>
+
+<script src="scripts/jquery-3.6.1.min.js"></script>
+<script src="scripts/jquery.inputmask.min.js"></script>
+<script src="scripts/scripts.js"></script>
 
 </body>
 </html>

@@ -695,3 +695,36 @@ a {
     /*font-family: 'NunitoSans-Black', sans-serif;*/
     font-family: 'Steppe-ExtraBold', sans-serif;
 }
+.legacy-cookie {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    z-index: 9999;
+    color: #ffffffb8;
+    border-radius: 6px;
+}
+.legacy-cookie > div {
+    width: 100%;
+    padding: 12px 10px;
+    background: rgb(0 0 0 / 79%);
+    font-size: 14px;
+    line-height: 19px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 6px;
+    color: #f1f1f1;
+    align-items: center;
+}
+.legacy-cookie a {
+    text-decoration: none;
+    color: rgb(52, 160, 255);
+}
+
+.legacy-cookie-close {
+    width: 16px;
+    height: 16px;
+    fill: #f1f1f1;
+}

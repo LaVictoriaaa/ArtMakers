@@ -1,4 +1,6 @@
 // window.onload = function () {
+let phoneInput = $('#phone');
+phoneInput.inputmask({"mask": "375999999999"});
 
 document.getElementById('burger').onclick = function () {
     document.getElementById('burger-menu').classList.remove('d-none');
@@ -6,6 +8,10 @@ document.getElementById('burger').onclick = function () {
 
 document.getElementById('close').onclick = function () {
     document.getElementById('burger-menu').classList.add('d-none');
+}
+
+document.getElementById('legacy-cookie-close').onclick = function () {
+    document.getElementById('legacy-cookie-wrap').style.display = 'none';
 }
 
 //Gallery script
@@ -50,7 +56,7 @@ response2();
 
 //Validation of order form
 const name = document.getElementById('name');
-const phone = document.getElementById('phone');
+const phone = document.getElementById('phone')
 const call = document.getElementById('call-me');
 
 const orderFormBlock = document.getElementById('order-form-block');

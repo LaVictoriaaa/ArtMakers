@@ -391,12 +391,19 @@
         gap: 20px;
         font-size: 16px;
     }
-
+    .contacts-1 {
+         font-size: 14px;
+     }
     .contacts-2 svg {
-        width: 30px !important;
-        height: 30px !important;
+        width: 28px !important;
+        height: 28px !important;
     }
-
+    .contacts-2 div {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 5px;
+    }
     .footer-registration {
         font-size: 12px;
     }
