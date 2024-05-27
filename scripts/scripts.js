@@ -1,4 +1,4 @@
-// window.onload = function () {
+window.onload = function () {
 let phoneInput = $('#phone');
 phoneInput.inputmask({"mask": "375999999999"});
 
@@ -149,4 +149,4 @@ const year = document.getElementById('year');
 let now = new Date();
 year.innerText = now.getFullYear();
 
-// }
+}

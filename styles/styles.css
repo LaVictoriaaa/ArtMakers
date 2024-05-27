@@ -14,7 +14,6 @@
 }
 
 body {
-    /*font-family: 'NunitoSans-Regular', sans-serif;*/
     font-family: 'Steppe-Book', sans-serif;
     color: #39373A;
     position: relative;
@@ -26,7 +25,8 @@ a {
 
 .fixed-phone {
     position: fixed;
-    bottom: 40px;
+    /*bottom: 40px;*/
+    bottom: 10%;
     right: 40px;
     z-index: 999;
     fill: #FFCC29;
@@ -70,7 +70,7 @@ a {
     position: relative;
     width: 100%;
     padding-bottom: 100px;
-    background-image: url("../images/main-bg.png");
+    background-image: url("../images/main-bg.webp");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -78,7 +78,7 @@ a {
 .menu-burger {
     position: fixed;
     right: 0;
-    background: #000000b5;
+    background: #000000e0;
     height: 100%;
     width: 60%;
     z-index: 999;
@@ -98,7 +98,6 @@ a {
     color: #FFFFFF;
 }
 .burger-item a:hover {
-    font-family: 'Steppe-ExtraBold', sans-serif;
     color: #FFCC29;
     border-bottom: 2px solid #FFCC29;
 }
@@ -107,7 +106,7 @@ a {
     display: block;
     width: 30px;
     height: 30px;
-    fill: #eec4cf;
+    fill: white;;
     position: absolute;
     top: 40px;
     left: 40px
@@ -146,7 +145,6 @@ a {
 }
 
 .menu-item a:hover {
-    font-family: 'Steppe-ExtraBold', sans-serif;
     color: #FFCC29;
     border-bottom: 2px solid #FFCC29;
 }
@@ -177,6 +175,7 @@ a {
     font-size: 18px;
     text-decoration: none;
     color: #39373A;
+    padding: 15px 10px 13px 10px;
 }
 .main-content {
     position: relative;
@@ -189,15 +188,13 @@ a {
     flex-direction: column;
     justify-content: space-between;
     gap: 40px;
-    /*padding: 200px 110px 50px 110px;*/
     padding-top: 120px;
 }
 
 .main-title {
     max-width: 990px;
     color: #FFF;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
-    /*font-family: 'Roboto-Black', sans-serif;*/
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15), 0px 4px 4px rgba(0, 0, 0, 0.15);
     font-family: 'Steppe-ExtraBold', sans-serif;
     font-size: 85px;
     line-height: normal;
@@ -209,7 +206,6 @@ a {
 
 .main-text {
     color: #FFF;
-    /*font-family: "NunitoSans-Regular", sans-serif;*/
     font-family: "Steppe-Book", sans-serif;
     font-size: 25px;
     line-height: normal;
@@ -217,7 +213,6 @@ a {
 
 .main-action {
     display: flex;
-    /* align-content: center; */
     justify-content: center;
     text-align: center;
     padding-top: 110px;
@@ -242,7 +237,6 @@ a {
 .common-title {
     color: #39373A;
     text-align: center;
-    /*font-family: "NunitoSans-ExtraBold", sans-serif;*/
     font-family: "Steppe-ExtraBold", sans-serif;
     font-size: 45px;
     line-height: 1;
@@ -255,7 +249,6 @@ a {
 .about-text {
     color: #39373A;
     text-align: justify;
-    /*font-family: 'Comfortaa', sans-serif;*/
     font-family: 'Steppe-Book', sans-serif;
     font-size: 24px;
     display: flex;
@@ -318,7 +311,6 @@ a {
 .service-item-title {
     font-size: 22px;
     text-align: center;
-    /*font-family: NunitoSans-Black, sans-serif;*/
     font-family: 'Steppe-ExtraBold', sans-serif;
 }
 
@@ -349,7 +341,7 @@ a {
 
 
 .consultation {
-    background-image: url("../images/consultation-bg.png");
+    background-image: url("../images/consultation-bg.webp");
     padding: 80px 0;
 }
 
@@ -360,14 +352,12 @@ a {
 }
 
 .consultation-text {
-    /*font-family: 'Comfortaa', sans-serif;*/
     font-family: 'Steppe-Book', sans-serif;
     font-size: 20px;
     text-align: center;
 }
 
 .consultation-action {
-    /*padding-top: 20px;*/
     display: flex;
     gap: 30px;
     justify-content: center;
@@ -381,7 +371,6 @@ a {
     border-radius: 28px;
     background: #39373A;
     color: #FFF;
-    /*font-family: "NunitoSans-Regular", sans-serif;*/
     font-family: "Steppe-Book", sans-serif;
     font-size: 16px;
     height: 54px;
@@ -392,7 +381,6 @@ a {
 
 .button-grey:hover {
     background: #000000;
-    /*font-family: "NunitoSans-Black", sans-serif;*/
     font-family: "Steppe-ExtraBold", sans-serif;
 }
 
@@ -410,12 +398,15 @@ a {
 
 .gallery-items {
     line-height: 1;
-    padding: 80px 0;
+    padding: 80px 0 40px 0;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    margin-left: -120px;
-    margin-right: -120px;
     gap: 15px;
+    margin-left: -10px;
+    margin-right: -10px;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
 }
 
 .gallery-item {
@@ -436,7 +427,7 @@ a {
 
 .gallery-underlay {
     position: absolute;
-    left: 0;
+    left: 1px;
     bottom: 40px;
     width: 320px;
     border-radius: 0px 10px 10px 0px;
@@ -446,7 +437,6 @@ a {
 
 .gallery-text {
     color: #FFF;
-    /*font-family: 'Comfortaa-Regular', sans-serif;*/
     font-family: 'Steppe-Book', sans-serif;
     font-size: 24px;
 }
@@ -490,8 +480,6 @@ a {
     gap: 10px;
     justify-content: center;
     text-align: center;
-    /*padding-left: 48px;*/
-    /*padding-right: 48px;*/
     padding: 0 40px;
 }
 
@@ -501,14 +489,13 @@ a {
 }
 
 .advantage-item-text {
-    /*font-family: 'Comfortaa-Regular', sans-serif;*/
     font-family: 'Steppe-Book', sans-serif;
     font-size: 16px;
     text-align: justify;
 }
 
 .order {
-    background-image: url("../images/order-form.png");
+    background-image: url("../images/order-form.webp");
     padding: 10px 0;
 }
 
@@ -531,7 +518,6 @@ a {
 }
 
 .order-form-text {
-    /*font-family: 'Comfortaa-Regular', sans-serif;*/
     font-family: 'Steppe-Book', sans-serif;
     font-size: 20px;
 }
@@ -552,7 +538,6 @@ a {
     border-radius: 28px;
     width: 380px;
     padding: 18px 20px;
-    /*font-family: 'Comfortaa-Regular', sans-serif;*/
     font-family: 'Steppe-Book', sans-serif;
     font-size: 16px;
 }
@@ -568,7 +553,6 @@ a {
 .error {
     display: none;
     font-size: 14px;
-    /*font-family: 'NunitoSans-Black', sans-serif;*/
     font-family: 'Steppe-ExtraBold', sans-serif;
     text-align: center;
 }
@@ -613,7 +597,6 @@ a {
 }
 
 .contacts-bold {
-    /*font-family: 'Comfortaa-Bold', sans-serif;*/
     font-family: 'Steppe-ExtraBold', sans-serif;
 }
 
@@ -634,19 +617,14 @@ a {
 }
 
 .contacts-links {
-    /*font-family: 'NunitoSans-Black', sans-serif;*/
     font-family: 'Steppe-ExtraBold', sans-serif;
     text-decoration: none;
     color: black;
 }
 
 .map {
-    /*background: #0000000C;*/
-    /*background: #F9F9F9;*/
     display: flex;
     justify-content: center;
-    padding: 10px;
-    /*padding: 70px 0;*/
 }
 
 .map-location {
@@ -654,12 +632,10 @@ a {
     border: 0;
     width: 100%;
     height: 600px;
-    /*align-items: center;*/
 }
 
 .footer {
     background: rgb(0 0 0 / 74%);
-    /*background: rgba(254, 223, 179, 0.40);*/
     padding: 50px 0;
 }
 
@@ -677,7 +653,7 @@ a {
 }
 
 .menu-item-footer a {
-    /*color: #39373A;*/
+    color: #39373A;
 }
 
 .footer-icons {
@@ -692,7 +668,6 @@ a {
 }
 
 .footer-bold {
-    /*font-family: 'NunitoSans-Black', sans-serif;*/
     font-family: 'Steppe-ExtraBold', sans-serif;
 }
 .legacy-cookie {
@@ -708,7 +683,7 @@ a {
 }
 .legacy-cookie > div {
     width: 100%;
-    padding: 12px 10px;
+    padding: 20px;
     background: rgb(0 0 0 / 79%);
     font-size: 14px;
     line-height: 19px;
