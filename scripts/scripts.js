@@ -11,7 +11,7 @@ document.getElementById('close').onclick = function () {
 }
 
 document.getElementById('legacy-cookie-close').onclick = function () {
-    document.getElementById('legacy-cookie-wrap').style.display = 'none';
+    document.querySelector('[data-element="legacy-cookie"]').style.display = 'none';
 }
 
 //Gallery script

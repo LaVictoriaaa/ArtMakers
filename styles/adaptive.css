@@ -104,7 +104,7 @@
 
     .main {
         background-color: #39373A;
-        background-image: url("../images/main-bg-1024.png");
+        background-image: url("../images/main-bg-1024.webp");
         background-size: contain;
     }
 
@@ -422,7 +422,7 @@
     }
 
     .main {
-        background-image: url("../images/main-bg-mobile.png");
+        background-image: url("../images/main-bg-mobile.webp");
         background-size: cover;
     }
 
