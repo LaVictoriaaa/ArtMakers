@@ -399,7 +399,7 @@ a {
 
 .gallery-item img {
     width: 401px;
-    height: 340px;
+    /*height: 340px;*/
 }
 
 .d-none {

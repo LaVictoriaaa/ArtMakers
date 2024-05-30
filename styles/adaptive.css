@@ -129,9 +129,9 @@
         height: 90px;
     }
 
-    .gallery-item img {
-        width: 400px;
-    }
+    /*.gallery-item img {*/
+    /*    width: 400px;*/
+    /*}*/
 
     .gallery-underlay {
         width: 300px;
@@ -177,7 +177,8 @@
 
 @media screen and (max-width: 768px) {
     .main {
-        background-size: contain;
+        /*background-size: contain;*/
+        background-size: cover;
     }
 
     .main-info {
@@ -227,8 +228,12 @@
         grid-template-columns: repeat(2, auto);
     }
 
+    .gallery-item {
+        width: 260px;
+    }
+
     .gallery-item img {
-        width: 300px;
+        width: 100%;
     }
 
     .gallery-underlay {
@@ -279,7 +284,8 @@
     }
 
     .main {
-        background-size: contain;
+        /*background-size: contain;*/
+        background-size: cover;
     }
 
     .logo {
@@ -292,11 +298,11 @@
     }
 
     .main-title {
-        font-size: 25px;
+        font-size: 30px;
     }
 
     .main-text {
-        font-size: 11px;
+        font-size: 13px;
     }
 
     .common-title {
@@ -441,7 +447,7 @@
     }
 
     .common-title {
-        font-size: 20px;
+        font-size: 24px;
     }
 
     .main-info {
@@ -458,9 +464,19 @@
     }
 
     .about-text {
-        padding: 20px;
+        padding: 10px;
     }
 
+    .about-pictures {
+        padding: 10px;
+        gap: 10px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .about-pictures img:nth-child(5) {
+        display: none;
+    }
     .about-pictures img {
         width: 50px;
         height: 50px;
@@ -468,6 +484,9 @@
 
     .about-action .button {
         width: 260px;
+    }
+    .button-grey {
+        font-size: 14px;
     }
 
     .services {
@@ -488,6 +507,10 @@
 
     .contacts-text {
         width: 300px;
+    }
+
+    .footer-icons a svg {
+        width: 40px;
     }
 }
 
