@@ -3,6 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+html {
+    scroll-behavior: smooth;
+}
 @font-face {
     font-family: 'Steppe-Book';
     src: url("../fonts/Steppe-Book.ttf");
@@ -11,6 +14,18 @@
 @font-face {
     font-family: 'Steppe-ExtraBold';
     src: url("../fonts/Steppe-ExtraBold.ttf");
+}
+@font-face {
+    font-family: 'Rubik';
+    src: url("../fonts/Rubik-Regular.ttf");
+}
+@font-face {
+    font-family: 'Rubik-SemiBold';
+    src: url("../fonts/Rubik-SemiBold.ttf");
+}
+@font-face {
+    font-family: 'Rubik-ExtraBold';
+    src: url("../fonts/Rubik-ExtraBold.ttf");
 }
 
 body {
@@ -23,7 +38,6 @@ a {
     text-decoration: none;
     cursor: pointer;
 }
-
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -66,7 +80,7 @@ a {
 .burger-item a {
     font-size: 18px;
     text-decoration: none;
-    cursor: pointer;
+    /*cursor: pointer;*/
     color: #FFFFFF;
 }
 .burger-item a:hover {
@@ -112,7 +126,7 @@ a {
 .menu-item a {
     font-size: 18px;
     text-decoration: none;
-    cursor: pointer;
+    /*cursor: pointer;*/
     color: #FFFFFF;
 }
 
@@ -126,14 +140,13 @@ a {
     width: 222px;
     padding: 15px 10px;
     line-height: 1;
-    /*height: 54px;*/
     border: none;
     text-align: center;
     border-radius: 40px;
     background: #FFCC29;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     color: #39373A;
-    font-family: 'Steppe-ExtraBold', sans-serif;
+    font-family: 'Rubik-ExtraBold', sans-serif;
     font-size: 18px;
 }
 
@@ -147,7 +160,6 @@ a {
     font-size: 18px;
     text-decoration: none;
     color: #39373A;
-    padding: 15px 10px 13px 10px;
 }
 .main-content {
     position: relative;
@@ -166,7 +178,8 @@ a {
 .main-title {
     max-width: 990px;
     color: #FFF;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15), 0px 4px 4px rgba(0, 0, 0, 0.15);
+    /*text-shadow: 0 0 0.2em #00000026, 0 0 0.2em #00000026, 0 0 0.2em #00000026;*/
+    text-shadow: 0 0 0.2em rgba(21, 21, 21, 0), 0 0 0.2em rgba(21, 21, 21, 0), 0 0 0.2em rgba(21, 21, 21, 0);
     font-family: 'Steppe-ExtraBold', sans-serif;
     font-size: 85px;
     line-height: normal;
@@ -312,7 +325,6 @@ a {
     fill: #FFCC29;
 }
 
-
 .consultation {
     background-image: url("../images/consultation-bg.webp");
     padding: 80px 0;
@@ -344,7 +356,7 @@ a {
     border-radius: 28px;
     background: #39373A;
     color: #FFF;
-    font-family: "Steppe-Book", sans-serif;
+    font-family: "Rubik-SemiBold", sans-serif;
     font-size: 16px;
     height: 54px;
     text-align: center;
@@ -354,7 +366,6 @@ a {
 
 .button-grey:hover {
     background: #000000;
-    font-family: "Steppe-ExtraBold", sans-serif;
 }
 
 .button-consultation {
@@ -411,6 +422,7 @@ a {
     border-radius: 0px 10px 10px 0px;
     background: rgba(0, 0, 0, 0.60);
     padding: 15px 20px;
+    backdrop-filter: blur(1px);
 }
 
 .gallery-text {
@@ -693,6 +705,7 @@ a {
 }
 .legacy-cookie-wrapper {
     backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     padding: 20px;
     margin: 20px;
     background: rgb(0 0 0 / 79%);
@@ -708,7 +721,7 @@ a {
 .legacy-cookie a {
     text-decoration: none;
     color: rgb(52, 160, 255);
-    cursor: pointer;
+    /*cursor: pointer;*/
 }
 
 .legacy-cookie-close-button {
